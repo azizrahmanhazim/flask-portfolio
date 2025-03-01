@@ -1,0 +1,21 @@
+# created by virtualenv automatically
+# Ignore the .env file
+.env
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore IDE-related files (for PyCharm)
+.idea/
+.vscode/
+
+# Ignore system files
+.DS_Store
+

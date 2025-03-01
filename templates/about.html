@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block title %}About Me - Aziz Portfolio{% endblock %}
+
+{% block content %}
+
+<!-- About Me Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Who Am I?</h2>
+        <p>
+            Hi! I'm <strong>Aziz Rahman Hazim</strong>, a passionate <strong>Python Developer</strong> with expertise in
+            <strong>Flask, web development, and database management</strong>.
+        </p>
+        <p>
+            I specialize in building <strong>user-friendly, efficient, and scalable web applications</strong>. My
+            expertise includes
+            <strong>backend development, API integration, and database optimization</strong>.
+        </p>
+        <p>
+            I am always eager to learn new technologies, enhance my skills, and take on <strong>challenging
+            projects</strong>.
+            My goal is to create <strong>high-quality web solutions</strong> that solve real-world problems.
+        </p>
+        <div class="text-center mt-4">
+            <a href="{{ url_for('contact') }}" class="btn btn-primary">
+                <i class="bi bi-envelope"></i> Contact Me
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Experience & Education -->
+<section id="experience" class="py-5 bg-light fade-in-section">
+    <div class="container">
+        <h2 class="text-center mb-4">Experience & Education</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Experience</h4>
+                <ul>
+                    <li><strong>Freelance Web Developer</strong> – Developed and deployed Flask-based web applications.</li>
+                    <li><strong>Backend Developer (Internship)</strong> – Worked on API integrations and database management.</li>
+                    <li><strong>Personal Projects</strong> – Built custom applications using Python, Flask, and SQLite.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4>Education</h4>
+                <ul>
+                    <li><strong>Bachelor’s Degree in Computer Science</strong> – [Your University Name]</li>
+                    <li><strong>Web Development Certification</strong> – Online learning platforms (Udemy, Coursera, etc.)</li>
+                    <li><strong>Continuous Learning</strong> – Regularly updating skills with new technologies.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Work With Me -->
+<section id="why-me" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Why Work With Me?</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <i class="bi bi-speedometer2 display-4"></i>
+                <h5 class="mt-3">Fast & Efficient</h5>
+                <p>My code is optimized for <strong>performance</strong>, ensuring smooth and fast applications.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-person-check display-4"></i>
+                <h5 class="mt-3">Client-Oriented</h5>
+                <p>I prioritize <strong>user experience</strong> and tailor applications to meet business needs.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-tools display-4"></i>
+                <h5 class="mt-3">Problem Solver</h5>
+                <p>I enjoy <strong>solving challenges</strong> and building creative solutions for complex problems.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

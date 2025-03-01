@@ -1,0 +1,80 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+
+{% block title %}Welcome | Aziz Rahman Hazim{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="home" class="text-center hero-section">
+    <div class="container">
+        <h1 class="display-4">Hi, I'm Aziz Rahman Hazim</h1>
+        <p class="lead">Aspiring Python Developer | Passionate About Web Development</p>
+
+        <!-- Call-to-Action Buttons -->
+        <div class="mt-4">
+            <a href="{{ url_for('about') }}" class="btn btn-primary btn-lg">
+                <i class="bi bi-person-circle"></i> Learn More About Me
+            </a>
+            <a href="{{ url_for('contact') }}" class="btn btn-success btn-lg">
+                <i class="bi bi-envelope"></i> Contact Me
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Include Typed.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed("#typed-text", {
+        strings: ["Aziz Rahman Hazim", "a Python Developer", "a Web Enthusiast", "a Problem Solver"],
+        typeSpeed: 70,
+        backSpeed: 50,
+        loop: true
+    });
+
+    var typed2 = new Typed("#dynamic-text", {
+        strings: ["Python Developer", "Web Developer", "Flask Expert", "Problem Solver"],
+        typeSpeed: 80,
+        backSpeed: 50,
+        loop: true
+    });
+</script>
+
+
+<!-- About Me Preview (Simplified) -->
+<section id="about-preview" class="py-5 bg-light fade-in-section">
+    <div class="container text-center">
+        <h2 class="mb-4">About Me</h2>
+        <p>I'm <strong>Aziz Rahman Hazim</strong>, a <strong>Python developer</strong> passionate about <strong>Flask,
+            web development, and database management</strong>.</p>
+        <p>I love <strong>creating web applications</strong> and constantly learning new technologies.</p>
+
+        <a href="{{ url_for('about') }}" class="btn btn-secondary mt-3">More About Me</a>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">My Skills</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <i class="bi bi-code-slash display-4"></i>
+                <h5 class="mt-3">Web Development</h5>
+                <p>Building responsive websites with Flask & Bootstrap.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-database display-4"></i>
+                <h5 class="mt-3">Database Management</h5>
+                <p>Working with SQLite and backend data handling.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-lightbulb display-4"></i>
+                <h5 class="mt-3">Continuous Learning</h5>
+                <p>Exploring new technologies and improving problem-solving skills.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

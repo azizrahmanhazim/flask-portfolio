@@ -1,0 +1,65 @@
+<!-- templates/services.html -->
+{% extends 'base.html' %}
+
+{% block title %}Services - Aziz Portfolio{% endblock %}
+
+{% block content %}
+<section id="services" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">My Services</h2>
+        <p class="text-center">I specialize in web development, database management, and cloud deployment.</p>
+
+        <div class="row">
+            <div class="col-md-4 text-center service-box">
+                <div class="service-icon">
+                    <i class="bi bi-code-slash display-4"></i>
+                </div>
+                <h5 class="mt-3">Web Development</h5>
+                <p>Building <strong>modern, responsive, and dynamic websites</strong> using <strong>Python (Flask)</strong> and <strong>Bootstrap</strong>.</p>
+            </div>
+
+            <div class="col-md-4 text-center service-box">
+                <div class="service-icon">
+                    <i class="bi bi-database display-4"></i>
+                </div>
+                <h5 class="mt-3">Database Management</h5>
+                <p>Designing and managing <strong>databases (SQLite, PostgreSQL)</strong> for efficient and scalable data handling.</p>
+            </div>
+
+            <div class="col-md-4 text-center service-box">
+                <div class="service-icon">
+                    <i class="bi bi-shield-lock display-4"></i>
+                </div>
+                <h5 class="mt-3">Web Security</h5>
+                <p>Implementing <strong>security best practices</strong> to protect web applications against vulnerabilities.</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-4 text-center service-box">
+                <div class="service-icon">
+                    <i class="bi bi-cloud-check display-4"></i>
+                </div>
+                <h5 class="mt-3">Deployment & Hosting</h5>
+                <p>Deploying applications to <strong>cloud platforms</strong> like <strong>Heroku, AWS, and DigitalOcean</strong>.</p>
+            </div>
+
+            <div class="col-md-4 text-center service-box">
+                <div class="service-icon">
+                    <i class="bi bi-wrench display-4"></i>
+                </div>
+                <h5 class="mt-3">Maintenance & Optimization</h5>
+                <p>Ensuring <strong>fast, secure, and optimized</strong> performance for web applications.</p>
+            </div>
+
+            <div class="col-md-4 text-center service-box">
+                <div class="service-icon">
+                    <i class="bi bi-gear display-4"></i>
+                </div>
+                <h5 class="mt-3">Technical Support</h5>
+                <p>Providing <strong>technical guidance</strong> for projects, debugging, and problem-solving.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
